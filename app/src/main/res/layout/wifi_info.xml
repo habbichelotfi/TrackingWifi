@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="wrap_content"
+                                                   android:layout_height="wrap_content">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:id="@+id/number"
+              android:textSize="16dp"
+              android:textColor="#000"
+              android:textStyle="bold"
+              android:layout_marginTop="10dp"
+
+/>
+    <ImageView
+            android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+            android:id="@+id/colour_wifi"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/number"
+         android:layout_marginTop="15dp"
+            android:contentDescription="TODO"/>
+    <TextView
+            android:layout_toRightOf="@id/colour_wifi"
+
+            android:layout_marginLeft="15dp"
+            android:text="ajajaj"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:id="@+id/name_wifi"
+              android:layout_height="wrap_content"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/colour_wifi"
+              android:layout_marginLeft="15dp"
+android:id="@+id/mac"
+              android:textSize="16dp"
+              android:text="1addasadda"
+              android:layout_marginTop="25dp"
+    />
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/name_wifi"
+            android:text="jajaj"
+            android:id="@+id/dbm"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+            />
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/channel"
+            android:layout_toRightOf="@id/name_wifi"
+            android:text="jajaj"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:textSize="16dp"
+            android:layout_marginTop="25dp"
+         />
+</RelativeLayout>

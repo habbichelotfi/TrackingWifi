@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:fancy="http://schemas.android.com/apk/res-auto"
+
+              tools:context=".MainActivity" android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:minWidth="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#00BCD4	"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:background="#00BCD4"
+                  android:id="@+id/Background"
+                  android:layout_height="wrap_content" android:orientation="vertical">
+        <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView"
+                android:layout_width="220dp"
+                android:layout_height="240dp"
+                android:layout_marginTop="10dp"
+                app:wlv_borderColor="@color/colorAccent"
+                android:layout_gravity="center_horizontal"
+                app:wlv_borderWidth="3dp"
+                app:wlv_progressValue="40"
+                app:wlv_shapeType="rectangle"
+                app:wlv_round_rectangle="true"
+                app:wlv_triangle_direction="north"
+                app:wlv_titleCenterStrokeColor="@android:color/holo_blue_dark"
+                app:wlv_titleCenterStrokeWidth="3dp"
+                app:wlv_titleCenter="0"
+                app:wlv_titleCenterColor="@android:color/white"
+                app:wlv_titleCenterSize="24sp"
+                app:wlv_waveAmplitude="70"
+                app:wlv_waveColor="#296c92"/>
+        <RelativeLayout
+                android:background="#0288D1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+            <ImageView android:layout_width="35dp" android:layout_height="35dp"
+                       android:src="@drawable/wifi_secu"
+                       android:id="@+id/wifi"
+                       android:layout_marginLeft="10dp"
+                       android:contentDescription="TODO"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="Linked"
+                      android:layout_marginTop="35dp"
+                      android:textColor="#fff"
+                      android:textStyle="bold"
+                      android:layout_marginLeft="10dp"
+            />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_toRightOf="@+id/wifi"
+                      android:text="wifi name"
+                      android:textColor="#fff"
+                      android:textSize="18dp"
+                      android:layout_marginLeft="30dp"
+                      android:id="@+id/wifi_name"
+            />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_alignBottom="@+id/wifi_name"
+                      android:text="Addresse mac"
+                      android:textSize="17dp"
+                      android:id="@+id/addresse_mac"
+                      android:layout_marginLeft="70dp"
+                      android:textColor="#fff"
+                      android:layout_marginBottom="-27dp"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/channel"
+                      android:layout_alignParentRight="true"
+                      android:layout_marginTop="18dp"
+                      android:textColor="#fff"
+                      android:textSize="18dp"
+                      android:layout_marginRight="10dp"
+                      android:text="Channe"
+            />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="70dp"
+        android:orientation="horizontal"
+                      android:layout_marginTop="10dp"
+        >
+            <ImageView android:layout_width="35dp" android:layout_height="35dp"
+            android:src="@drawable/speed"
+                       android:contentDescription="TODO"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+android:textStyle="italic"
+                    android:textSize="18dp"
+                      android:textColor="#0D0C0C"
+                  android:layout_marginLeft="15dp"
+                    android:text="Wifi Speed"/>
+            <TextView
+                    android:text="Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wifi_speed"
+                     android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_margin="20dp" />
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="10dp"
+        >
+            <ImageView android:layout_width="35dp" android:layout_height="35dp"
+                       android:src="@drawable/lock"
+                       android:contentDescription="TODO"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+
+                    android:textStyle="italic"
+
+            android:textSize="18dp"
+                    android:textColor="#0D0C0C"
+                    android:layout_marginLeft="15dp"
+                    android:text="Encryption"/>
+            <TextView
+                    android:text="type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:id="@+id/encry"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_margin="20dp" />
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="10dp"
+        >
+            <ImageView android:layout_width="35dp" android:layout_height="35dp"
+                       android:src="@drawable/adde"
+                       android:contentDescription="TODO"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="italic"
+
+                    android:textSize="18dp"
+                    android:textColor="#0D0C0C"
+                    android:layout_marginLeft="15dp"
+                    android:text="Addresse"/>
+            <TextView
+                    android:text="Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="17sp"
+                    android:id="@+id/adresse"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_margin="20dp" />
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="10dp"
+        >
+            <ImageView android:layout_width="35dp" android:layout_height="35dp"
+                       android:src="@drawable/ic_router_black_48dp"
+                       android:contentDescription="TODO"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+
+                    android:textSize="18dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#0D0C0C"
+                    android:layout_marginLeft="15dp"
+                    android:text="Distance"/>
+            <TextView
+                    android:text="Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17sp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:id="@+id/distance"
+                    android:layout_margin="20dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+<RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+    <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btn_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#00bfff"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_iconPosition="left"
+            android:layout_gravity="center"
+
+            fancy:fb_radius="0dp"
+            style="@style/Divider"
+            fancy:fb_text="Connect"
+            android:visibility="visible"
+            fancy:fb_textColor="#FFFFFF" />
+    <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btn_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btn_connect"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#ff0000"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_iconPosition="left"
+
+
+            android:layout_gravity="center"
+
+            fancy:fb_radius="0dp"
+            style="@style/Divider"
+            fancy:fb_text="Tester?"
+            android:visibility="visible"
+            fancy:fb_textColor="#FFFFFF" />
+</RelativeLayout>
+
+
+
+</LinearLayout>

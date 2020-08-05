@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content">
+<TextView android:layout_width="wrap_content"
+          android:textSize="16dp"
+          android:textColor="#000"
+          android:id="@+id/number"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="10dp"
+          android:layout_height="wrap_content"/>
+    <ImageView android:layout_width="30dp"
+android:src="@drawable/ic_wifi_black_48dp"
+               android:layout_marginLeft="20dp"
+               android:id="@+id/image"
+               android:layout_marginTop="7dp"
+               android:layout_height="30dp"/>
+    <TextView android:layout_width="wrap_content"
+              android:textSize="18dp"
+              android:textColor="#000"
+              android:text="jaja"
+              android:layout_toRightOf="@+id/image"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="15dp"
+              android:textStyle="italic"
+
+              android:id="@+id/wifi_name"
+              android:layout_height="wrap_content"/>
+    <TextView android:layout_width="match_parent"
+              android:textSize="17dp"
+              android:textColor="#000"
+              android:id="@+id/date"
+              android:text="jaja"
+
+              android:layout_marginRight="10dp"
+              android:gravity="right"
+              android:layout_height="wrap_content"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:textSize="17dp"
+            android:textColor="#1e90ff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:drawableEnd="@drawable/ic_arrow_downward_black_24dp"
+
+            android:gravity="right"
+            android:textStyle="bold|italic"
+
+            android:text="jjajaja"
+            android:id="@+id/download"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:textSize="17dp"
+            android:gravity="right"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="25dp"
+            android:drawableEnd="@drawable/ic_arrow_upward_black_24dp"
+            android:textStyle="bold|italic"
+            android:text="kakaka"
+            android:textColor="#00ff7f"
+            android:id="@+id/upload"
+            android:layout_height="wrap_content"/>
+</RelativeLayout>

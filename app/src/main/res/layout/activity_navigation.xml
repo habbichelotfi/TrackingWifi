@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:background="#00BCD4"
+        tools:context=".Navigation">
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:background="#03A9F4"
+            android:layout_width="match_parent"
+                                       app:navigationIcon="@drawable/ic_action_back"
+                                       android:layout_height="wrap_content"/>
+    <RelativeLayout
+            android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+        <ImageView android:layout_width="30dp" android:layout_height="30dp"
+                  android:textSize="16dp"
+                  android:textColor="#000"
+
+                   android:layout_marginLeft="10dp"
+                   android:src="@drawable/ic_wifi_black_48dp"
+                  android:textStyle="bold"
+                   android:id="@+id/colour_wifi"
+
+                   android:layout_marginTop="10dp"
+
+        />
+
+        <TextView
+                android:layout_toRightOf="@id/colour_wifi"
+
+                android:layout_marginLeft="15dp"
+                android:text="Wifi"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:id="@+id/name_wifi"
+                android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_toRightOf="@+id/colour_wifi"
+                  android:layout_marginLeft="15dp"
+                  android:id="@+id/wifi_name"
+                  android:textSize="16dp"
+                  android:text="1addasadda"
+                  android:layout_marginTop="25dp"
+        />
+
+    </RelativeLayout>
+<TextView android:layout_width="match_parent"
+          android:textStyle="bold"
+          android:textColor="#000"
+          android:layout_marginTop="10dp"
+android:textAlignment="center"
+          android:id="@+id/longi"
+
+          android:textSize="26dp"
+          android:text="Suivez la direction de la fleche "
+          android:layout_height="wrap_content"/>
+    <ImageView android:layout_width="100dp"
+               android:src="@drawable/navigation"
+               android:id="@+id/imageViewCompass"
+               android:layout_height="100dp"/>
+
+    <com.example.trackingwifi.NavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"/>
+
+    <TextView android:layout_width="match_parent"
+              android:textStyle="bold"
+              android:textColor="#000"
+              android:id="@+id/longif"
+              android:layout_marginTop="10dp"
+              android:textAlignment="center"
+              android:textSize="26dp"
+              android:text="Suivez la direction de la fleche "
+              android:layout_height="wrap_content"/>
+</LinearLayout>

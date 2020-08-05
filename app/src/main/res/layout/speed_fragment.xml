@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/speed"
+        android:orientation="vertical"
+        xmlns:fancy="http://schemas.android.com/apk/res-auto"
+android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:background="#f8f8ff"
+        android:layout_height="match_parent"
+        tools:context=".ui.speed.SpeedFragment">
+
+    <TextView
+            android:id="@+id/wifi_name"
+            android:layout_gravity="center"
+android:textSize="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name of wifi"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btn_start_speed"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#00bfff"
+            fancy:fb_focusColor="#9bd823"
+
+            fancy:fb_fontIconResource="&#xf04b;"
+            fancy:fb_iconPosition="left"
+
+            android:layout_gravity="center"
+
+            fancy:fb_radius="140dp"
+            style="@style/Divider"
+            fancy:fb_text="Start Speed Test"
+            fancy:fb_textColor="#FFFFFF" />
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:background="#fff"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Resultats"
+                      android:textSize="19dp"
+                      android:id="@+id/Result"
+                      android:textStyle="italic"
+                      android:layout_marginLeft="15dp"
+                      android:layout_marginTop="15dp"
+
+            />
+            <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone"
+
+                    android:id="@+id/liste_tests"
+            />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="No test find"
+                      android:textSize="22dp"
+                      android:id="@+id/notest"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:layout_marginTop="15dp"
+
+            />
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

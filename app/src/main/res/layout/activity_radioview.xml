@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  tools:context=".Frag1"
+
+                  android:background="@drawable/map">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+
+        <Spinner
+                android:id="@+id/style"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+        />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="21dp"
+
+                      android:textStyle="bold"
+                      android:layout_marginLeft="10dp"
+                      android:text="Rayon de :"
+            /> <Spinner
+                android:id="@+id/rayon"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+        />
+    </LinearLayout>
+
+
+</LinearLayout>
+    
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/list_wifis"
+            android:visibility="gone"
+            android:layout_height="match_parent"/>
+        <com.example.trackingwifi.RadarView
+                android:id="@+id/radarView"
+                android:layout_width="398dp"
+                android:layout_height="382dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="12dp"
+
+        />
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="wrap_content"
+                      android:layout_height="60dp"
+                      xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                      android:id="@+id/buttons"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_marginTop="15dp"
+        >
+            <com.ornach.nobobutton.NoboButton
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="20dp"
+                    app:nb_text="Stop"
+                    android:id="@+id/start"
+                    app:nb_borderColor="#EF3D56"
+                    app:nb_borderWidth="2dp"
+                    app:nb_backgroundColor="#FFF"
+                    app:nb_focusColor="#B83CC3"
+                    app:nb_textColor="#EF3D56"
+                    app:nb_radius="4dp"
+                    app:nb_drawableResource="@drawable/play"
+app:nb_iconPosition="left"
+                   />
+
+            <com.ornach.nobobutton.NoboButton
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="20dp"
+                    app:nb_text="Start"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/stop"
+                    app:nb_borderColor="#EF3D56"
+                    app:nb_borderWidth="2dp"
+                    app:nb_backgroundColor="#FFF"
+                    app:nb_focusColor="#B83CC3"
+                    app:nb_textColor="#EF3D56"
+                    app:nb_radius="4dp"
+                    app:nb_drawableResource="@drawable/stop"
+                    app:nb_iconPosition="left"
+            />
+
+        </LinearLayout>
+        <TextView
+                android:id="@+id/distance"
+                android:textSize="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" tools:ignore="NestedScrolling"/>
+
+    </LinearLayout>
+
