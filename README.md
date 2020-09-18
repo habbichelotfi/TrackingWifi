@@ -5,7 +5,7 @@ Vous aide à trouver un canal moins encombré pour votre routeur.
 
 [<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/details?id=lotfi.habbiche.trackingwifi)
 
-}
+
 This is the official repository of Tracking Wifi.
 <table  >
   <tr style="border:0;">
