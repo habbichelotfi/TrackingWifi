@@ -33,9 +33,8 @@ This is the official repository of Tracking Wifi.
    
 <img src="https://github.com/lotfi1234/trackingwifi/blob/master/screens/133563333_417956312971211_3617901204716424786_n.jpg" alt="Feature Graphic - Light Theme" height="400">
     </td>
-    
     </tr>
-    <tr>
+    <tr >
      <td>
    
 <img src="https://github.com/lotfi1234/trackingwifi/blob/master/screens/133563333_732065991061313_518262795838436720_n.jpg" alt="Feature Graphic - Light Theme" height="400">
@@ -48,7 +47,6 @@ This is the official repository of Tracking Wifi.
    
 <img src="https://github.com/lotfi1234/trackingwifi/blob/master/screens/133822236_214578953599648_1155108453097346527_n.jpg" alt="Feature Graphic - Light Theme" height="400">
     </td>
-    
     </tr>
   </table>
 
