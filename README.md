@@ -4,7 +4,7 @@ Teste la rapidite de votre reseau et affiche la moyenne du Download et Upload.
 Vous aide à trouver un canal moins encombré pour votre routeur.
 
 [<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/details?id=lotfi.habbiche.trackingwifi)
-[<img src=" https://developer.huawei.com/consumer/cn/service/josp/csp/activity/images/stamp/en_US/ic_logo.png" alt="Get it on Huawei AppGallery" height="80">](https://appgallery.cloud.huawei.com/ag/n/app/C103606101?channelId=channel&id=ca63ee1faf61451bbf5edb51f421cd21&s=9DAECBFD1A63CFC15383BBDD70F2B9695F77294D87FA3D46042AA4F49FA6EA05&detailType=0&v=)
+[<img src="https://github.com/lotfi1234/trackingwifi/blob/master/screens/logohuawei.png" alt="Get it on Huawei AppGallery" height="80">](https://appgallery.cloud.huawei.com/ag/n/app/C103606101?channelId=channel&id=ca63ee1faf61451bbf5edb51f421cd21&s=9DAECBFD1A63CFC15383BBDD70F2B9695F77294D87FA3D46042AA4F49FA6EA05&detailType=0&v=)
 
 
 This is the official repository of Tracking Wifi.
