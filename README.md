@@ -70,7 +70,7 @@ This is the official repository of Tracking Wifi.
 
 
 ## Feedback
-* Bug reports can be submitted [here](https://github.com/lotfi1234/trackingwifi/issues).
+* Bug reports can be submitted [here](https://github.com/lotfi1234/trackingwifi/issues) or contact me using this email trackingwifi.app@gmail.com.
 ## Contribute
 * Feel free to fork the project and submit your changes.
 
